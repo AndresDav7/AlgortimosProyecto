@@ -35,6 +35,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnSalir.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,6 +46,7 @@ public class Interfaz extends javax.swing.JFrame {
         lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblTitulo.setText("Proyecto Final - Algortimos");
 
+        btnOrdenamiento.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnOrdenamiento.setText("Algoritmos de Ordenamiento");
         btnOrdenamiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +54,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
+        btnAplicacion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAplicacion.setText("Aplicación");
         btnAplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +116,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnOrdenamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenamientoActionPerformed
-        // TODO add your handling code here:
+        VentanaOrdenamiento v1 = new VentanaOrdenamiento();
+        v1.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnOrdenamientoActionPerformed
 
     private void btnAplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAplicacionActionPerformed
